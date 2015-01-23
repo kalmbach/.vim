@@ -2,6 +2,8 @@ syntax on
 set nocompatible
 set history=10
 
+colorscheme badwolf
+
 set autoindent
 set smartindent
 set autoread
