@@ -31,6 +31,8 @@ set nowb
 set noswapfile
 set noeol
 
+set nocursorline
+
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
