@@ -13,12 +13,11 @@ set smartcase
 set hlsearch
 
 set list
-set listchars=trail:
+set listchars=trail:·
 set modelines=5
 set nowrap
 set tabstop=2
 set encoding=utf-8
-set cursorline
 set number
 set numberwidth=4
 
