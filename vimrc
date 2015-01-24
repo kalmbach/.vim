@@ -31,10 +31,14 @@ set list
 set listchars=trail:·
 set modelines=5
 set nowrap
-set tabstop=2
 set encoding=utf-8
 set number
 set numberwidth=4
+
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 
 set showmatch
 
