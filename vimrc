@@ -3,11 +3,8 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'AutoClose'
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'thoughtbot/vim-rspec'
-Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 
 syntax enable
