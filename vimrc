@@ -10,8 +10,6 @@ Bundle 'scrooloose/nerdtree'
 syntax enable
 filetype plugin indent on
 
-set background=dark
-colorscheme solarized
 
 set history=10
 set autoindent
@@ -54,12 +52,6 @@ let mapleader=","
 " Clear the search highlight
 nnoremap <leader><space> :noh<cr>
 
-" RSpec.vim mappings
-nnoremap <Leader>rt :call RunCurrentSpecFile()<CR>
-nnoremap <Leader>rs :call RunNearestSpec()<CR>
-nnoremap <Leader>rl :call RunLastSpec()<CR>
-nnoremap <Leader>ra :call RunAllSpecs()<CR>
-
 " Move between splits
 nnoremap <C-h> <C-W>h
 nnoremap <C-j> <C-W>j
@@ -75,9 +67,4 @@ nnoremap <right> <nop>
 " Switch between buffers
 noremap <tab> :bn<CR>
 noremap <S-tab> :bp<CR>
-
-" Fugitive maps
-nnoremap <leader>gs :Gstatus<CR>
-nnoremap <leader>gc :Gcommit<CR>
-nnoremap <leader>gb :Gblame<CR>
-vnoremap <leader>gb :Gblame<CR>
+set hidden
