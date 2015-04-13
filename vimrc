@@ -10,8 +10,8 @@ Bundle 'scrooloose/nerdtree'
 syntax enable
 filetype plugin indent on
 
-set background=dark
-colorscheme solarized
+" set background=dark
+" colorscheme solarized
 
 set history=10
 set autoindent
