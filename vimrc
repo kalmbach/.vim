@@ -6,6 +6,9 @@ call vundle#rc()
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-fugitive'
+Bundle 'bling/vim-airline'
+Bundle 'scrooloose/syntastic'
 
 syntax enable
 filetype plugin indent on
@@ -49,6 +52,13 @@ set noeol
 
 set nocursorline
 
+set laststatus=2
+let g:syntastic_check_on_open = 1
+let g:airline#extensions#default#layout = [
+      \ [ 'a', 'b', 'c' ],
+      \ [ 'z', 'warning' ]
+      \ ]
+
 let mapleader=","
 
 " Clear the search highlight
@@ -59,6 +69,10 @@ nnoremap <C-h> <C-W>h
 nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
 nnoremap <C-l> <C-W>l
+
+" Open new split panes to right and bottom
+set splitbelow
+set splitright
 
 " Disable arrow keys
 nnoremap <up> <nop>
