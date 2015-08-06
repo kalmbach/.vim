@@ -84,3 +84,12 @@ nnoremap <right> <nop>
 noremap <tab> :bn<CR>
 noremap <S-tab> :bp<CR>
 set hidden
+
+" Deactivate Ex-mode
+map Q <nop>
+
+" Deactivate recording
+map q <nop>
+
+" Deactivate keyword lookup
+map K <nop>
