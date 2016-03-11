@@ -22,7 +22,7 @@ set t_Co=256
 
 set background=dark
 let g:solarized_termcolors=256
-colorscheme solarized
+colorscheme tropikos
 
 set history=10
 set autoindent
@@ -84,8 +84,8 @@ let g:airline_symbols.paste = '∥'
 let g:airline_symbols.notexists = '∄'
 let g:airline_symbols.whitespace = 'Ξ'
 
-let g:airline_theme='solarized'
-
+let g:airline_theme='dark'
+let g:airline#extensions#default#section_truncate_width = {}
 let g:airline#extensions#default#layout = [
       \ [ 'a', 'b', 'c' ],
       \ [ 'z', 'error', 'warning' ]
