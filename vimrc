@@ -1,17 +1,21 @@
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
 
-Bundle 'pangloss/vim-javascript'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-fugitive'
-Bundle 'bling/vim-airline'
-Bundle 'scrooloose/syntastic'
+set rtp+=~/.vim/bundle/vundle/
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'scrooloose/nerdtree'
+Plugin 'bling/vim-airline'
+Plugin 'scrooloose/syntastic'
+Plugin 'wfleming/vim-codeclimate'
+
+call vundle#end()
+filetype plugin indent on
 
 syntax enable
-filetype plugin indent on
 
 " set background=dark
 " colorscheme solarized
@@ -93,3 +97,6 @@ map q <nop>
 
 " Deactivate keyword lookup
 map K <nop>
+
+" CodeClimate analyze
+nnoremap <leader>af :CodeClimateAnalyzeCurrentFile<cr>
