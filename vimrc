@@ -128,3 +128,6 @@ map K <nop>
 
 " CodeClimate analyze
 nnoremap <leader>af :CodeClimateAnalyzeCurrentFile<cr>
+
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%101v.\+/
