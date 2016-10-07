@@ -13,6 +13,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/syntastic'
 Plugin 'wfleming/vim-codeclimate'
+Plugin 'mxw/vim-jsx'
+Plugin 'duggiefresh/vim-easydir'
 
 call vundle#end()
 filetype plugin indent on
@@ -92,6 +94,9 @@ let g:airline#extensions#default#layout = [
       \ ]
 
 let mapleader=","
+
+" highlight JSX in .jsx and .js files
+let g:jsx_ext_required = 0
 
 " Clear the search highlight
 nnoremap <leader><space> :noh<cr>
