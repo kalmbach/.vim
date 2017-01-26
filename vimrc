@@ -15,6 +15,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'wfleming/vim-codeclimate'
 Plugin 'mxw/vim-jsx'
 Plugin 'duggiefresh/vim-easydir'
+Plugin 'tibabit/vim-templates'
 
 call vundle#end()
 filetype plugin indent on
@@ -38,7 +39,7 @@ set smartcase
 set hlsearch
 
 set list
-set listchars=trail:·
+set listchars=trail:.
 set modelines=5
 set nowrap
 set encoding=utf-8
@@ -98,6 +99,9 @@ let mapleader=","
 " highlight JSX in .jsx and .js files
 let g:jsx_ext_required = 0
 
+" template folder
+let g:tmpl_search_paths = ['~/.vim/templates']
+
 " Clear the search highlight
 nnoremap <leader><space> :noh<cr>
 
@@ -136,3 +140,7 @@ nnoremap <leader>af :CodeClimateAnalyzeCurrentFile<cr>
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%101v.\+/
+
+" remove trailing spaces on ruby and javascript files
+autocmd BufWritePre *.js %s/\s\+$//e
+autocmd BufWritePre *.rb %s/\s\+$//e
