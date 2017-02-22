@@ -5,17 +5,9 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-fugitive'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'scrooloose/syntastic'
-Plugin 'wfleming/vim-codeclimate'
-Plugin 'mxw/vim-jsx'
-Plugin 'duggiefresh/vim-easydir'
-Plugin 'tibabit/vim-templates'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'kchmck/vim-coffee-script'
 
 call vundle#end()
 filetype plugin indent on
@@ -24,7 +16,6 @@ syntax enable
 set t_Co=256
 
 set background=dark
-let g:solarized_termcolors=256
 colorscheme tropikos
 
 set history=10
@@ -65,42 +56,7 @@ set nocursorline
 
 set laststatus=2
 
-let g:syntastic_check_on_open = 1
-
-if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
-endif
-
-" unicode symbols
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.crypt = '🔒'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.notexists = '∄'
-let g:airline_symbols.whitespace = 'Ξ'
-
-let g:airline_theme='dark'
-let g:airline#extensions#default#section_truncate_width = {}
-let g:airline#extensions#default#layout = [
-      \ [ 'a', 'b', 'c' ],
-      \ [ 'z', 'error', 'warning' ]
-      \ ]
-
 let mapleader=","
-
-" highlight JSX in .jsx and .js files
-let g:jsx_ext_required = 0
-
-" template folder
-let g:tmpl_search_paths = ['~/.vim/templates']
 
 " Clear the search highlight
 nnoremap <leader><space> :noh<cr>
